@@ -2,6 +2,6 @@
 title: Cybersecurity Research blog
 ---
 
-![Banner Image](/assets/images/banner.png)
+![Banner Image](/assets/images/logoTwitter.png)
 
 
