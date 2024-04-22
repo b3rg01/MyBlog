@@ -2,4 +2,6 @@ theme: minima
 minima:
   skin: dark
 author: 8erg
-title: /assets/images/logoTwitter.png
+title: 8erg Cybersecurity Blog
+logo_image: /assets/images/logoTwitter.png
+
