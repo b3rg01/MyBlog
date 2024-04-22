@@ -2,4 +2,4 @@ theme: minima
 minima:
   skin: dark
 author: 8erg
-title: ![Banner Image](/assets/images/logoTwitter.png)
+title: /assets/images/logoTwitter.png
