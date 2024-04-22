@@ -1,4 +1,4 @@
 ---
-title: Welcome to my Cybersecurity Research blog
+title: Cybersecurity Research blog
 ---
 
