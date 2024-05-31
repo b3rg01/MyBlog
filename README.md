@@ -12,8 +12,9 @@
 This where you will be able to find almost everything that I'm working on or that I've worked on!
 
 <footer>
+  
 ---
 
-Get In Touch With Me: [My Twitter](https://twitter.com/8erg) &bull; 
+Get In Touch With Me: [My Twitter](https://twitter.com/8erg)
 
 </footer>
