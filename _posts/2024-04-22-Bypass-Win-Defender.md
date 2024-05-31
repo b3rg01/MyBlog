@@ -163,6 +163,7 @@ but you can still play around with it if you want to!
   ```
 - Coding the second application, that will use the encrypted payload, decrypt it and perform a simple local process injection
    > ⚠️ **Note:** You can edit the variable to put your own encrypted shellcode generated. Also make sure that the value inside the variable key is the same as when you generated the encrypted payload
+
   ```
   #include <Windows.h>
   #include <stdio.h>
@@ -276,7 +277,7 @@ but you can still play around with it if you want to!
   # Proof
   ---
 
-  ![Proof Image](/assets/images/proof.png)
+  ![Proof Image](/../assets/images/proof.png)
 
 
 
