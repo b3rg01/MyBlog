@@ -3,6 +3,8 @@ title: "Bypass Windows Defender With Xor Encryption"
 date: 2024-04-22
 ---
 
+  > ⚠️ **Note:** Keep in mind that this page is still in construction and this is not the final version
+
 # Prelude
 ---
 
