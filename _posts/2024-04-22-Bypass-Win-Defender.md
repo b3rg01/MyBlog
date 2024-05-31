@@ -50,6 +50,7 @@ but you can still play around with it if you want to!
 - Coding the first application that will take the shellcode and will perform a xor encryption and will output the result
   
   > ⚠️ **Note:** You can edit the variable to put your own shellcode generated. The first program will be upgraded so you can pass the shellcode via a prompt, but for the sake of this demonstration, I didn't do it
+  > Also note that if you edit the variable key, make sure that you have the same key in the second program.
 
   ```
   #include <Windows.h>
@@ -161,6 +162,7 @@ but you can still play around with it if you want to!
   }
   ```
 - Coding the second application, that will use the encrypted payload, decrypt it and perform a simple local process injection
+   > ⚠️ **Note:** You can edit the variable to put your own encrypted shellcode generated. Also make sure that the value inside the variable key is the same as when you generated the encrypted payload
   ```
   #include <Windows.h>
   #include <stdio.h>
