@@ -48,6 +48,9 @@ Now for all my fellow hackers who likes programming, I know your hands are itchi
 but you can still play around with it if you want to!
 
 - Coding the first application that will take the shellcode and will perform a xor encryption and will output the result
+  
+  > ⚠️ **Note:** You can edit the variable to put your own shellcode generated. The first program will be upgraded so you can pass the shellcode via a prompt, but for the sake of this demonstration, I didn't do it
+
   ```
   #include <Windows.h>
   #include <stdio.h>
