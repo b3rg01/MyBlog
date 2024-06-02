@@ -279,7 +279,7 @@ but you can still play around with it if you want to!
   # Proof
   ---
 
-  ![Proof Image](/../assets/images/proof.png)
+  ![Proof Image](../assets/images/proof.png)
 
 
 
