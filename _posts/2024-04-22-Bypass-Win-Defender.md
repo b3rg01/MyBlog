@@ -16,7 +16,7 @@ In this blog I will take you through it step by step. At the end, I will also in
 # Environment Setup
 ---
 
-If you want also want to perform this simple attack you will need to have to virtual machines
+If you also want to perform this simple attack you will need to have 2 virtual machines
   - Windows Machine (victim)
   - Kali Linux or any other machine with metasploit on it (Attacker)
 
