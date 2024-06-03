@@ -246,6 +246,12 @@ but you can still play around with it if you want to!
 
   ![Proof Image](../assets/images/proof.png)
 
+So, here we are, we can clearly see that windows defender is not able to detect the malware. For now we only change the signature of our executable, I will try to perform an injection that will be undetectable by windows defender in another blog
+
+  # Credits
+
+  I want to shoutout the maldev academy for some great references on windows defender evasion
+
 
 
 
