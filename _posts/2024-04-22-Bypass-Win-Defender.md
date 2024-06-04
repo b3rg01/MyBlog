@@ -1,5 +1,5 @@
 ---
-title: "Evading Windows Defender Static Analysis With Xor Encryption"
+title: "Evading Windows Defender Static Analysis - Part 1"
 date: 2024-04-22
 ---
 
@@ -9,7 +9,7 @@ date: 2024-04-22
 ---
 
 If you're new in malware development, just like me you might've heard that it was possible to evade windows defender static analysis with a simple encryption. 
-I could not believe it, so I had to try it and why not put in a blog to describe my experience at the same time!
+I could not believe it, so I had to try it and why not put in a blog to describe my experience at the same time! In this part 1, we will focus on changing the signature of our malicious executable to evade windows static analysis, in the part 2 we will perform the injection, while evading windows defender
 
 
 # Environment Setup
