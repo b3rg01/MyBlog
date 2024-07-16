@@ -13,3 +13,51 @@ Here’s my own analysis of this particular specimen.
 
 In this blog post, I will analyze the initial stage of WannaCry ransomware sample. Please note that I'm new at this and I will try to provide a detail technical analysis of the initial stage to the best of my abilities. 
 Hope you will enjoy this!!
+
+
+###  General Details
+---
+
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709173746.png" style="margin-top: 20px" > 
+
+
+### Basic Static Analysis
+---
+
+*The full list of images can be found in the Appendices.*
+
+- By looking as some of the strings, we can see some interesting library related to encryptions such as:
+	- `CryptAcquireContextA`
+	- `CryptGenRandom`
+	- `CryptServiceA`
+	- `CryptReleaseContext`
+	- `CryptGenKey`
+	- `CryptDecrypt`
+	- `CryptEncrypt`
+	- `CryptDestroyKey`
+	- `CryptImportKey`
+- We can also see that the malware will probably modify or add some registry based on the library imported
+	
+- In the strings, we can also find words such as :
+	- `mssecsvc.exe` (already flagged for been used for ransomware infection)
+	- `tasksche.exe`
+- We also see alot of base64 encoded strings
+- We can see some randomly named folder that will dynamically named on runtime
+	- `C:\%s\%s`
+	- `C:\%s\qeriuwjhrf`
+- We can also some interesting urls, such as :
+	- `http://www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com`
+- An interesting string that let's us know for sure that we're dealing with the WannaCry malware : 
+	- `c.wnry`
+	- `t.wnry`
+	- `msg/m_croatian.wnry`
+	- `msg/m_dutch.wnry9`
+	- `msg/m_english.wnryF`
+	- `msg/m_korean.wnry`
+	- `msg/m_latvian.wnry`
+- Interesting strings:
+	- `115p7UMMngoj1pMvkpHijcRdfJNXj6LrLn`
+	- `12t9YDPgwueZ9NyMgw519p7AA8isjr6SMw` 
+	- `13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94`
+- Suspicious commands:
+	- `icacls . /grant Everyone:F /T /C /Q` (Granting everyon acces to ACL)
