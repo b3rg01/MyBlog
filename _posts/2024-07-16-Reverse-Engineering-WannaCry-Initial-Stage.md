@@ -7,6 +7,8 @@ date: 2024-07-16
 ### Description
 ---
 
+<p src="margin-top: 20px;"></p>
+
 In the early summer of 2017, WannaCry was unleashed on the world. Widely considered to be one of the most devastating malware infections to date, WannaCry left a trail of destruction in its wake. 
 WannaCry is a classic ransomware sample; more specifically, it is a ransomware crypto worm, which means that it can encrypt individual hosts and had the capability to propagate through a network on its own.
 Here’s my own analysis of this particular specimen.
@@ -23,6 +25,8 @@ Hope you will enjoy this!!
 
 ### Basic Static Analysis
 ---
+
+<p src="margin-top: 20px;"></p>
 
 *The full list of images can be found in the Appendices.*
 
@@ -67,6 +71,8 @@ Hope you will enjoy this!!
 
 ### Basic Dynamic Analysis
 ---
+
+<p src="margin-top: 20px;"></p>
 
 - When triggering the malware with internet nothing happens, as far as encrypting my files, but I see that some calls are made to a malicious url, probably to drop something else on my file system
 - When triggering the malware without internet connection, i can see that my file system get automatically encrypted
