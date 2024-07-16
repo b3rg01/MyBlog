@@ -26,6 +26,8 @@ Hope you will enjoy this!!
 
 *The full list of images can be found in the Appendices.*
 
+>  For this part I used a command line tool named floss to get the strings from the ransomware executable.
+
 - By looking as some of the strings, we can see some interesting library related to encryptions such as:
 	- `CryptAcquireContextA`
 	- `CryptGenRandom`
