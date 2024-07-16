@@ -2,6 +2,7 @@
 title: Cybersecurity Research blog
 ---
 
-![Banner Image](docs/assets/logoTwitter.png)
+
+>  You can follow me on [twitter](https://twitter.com/8erg_) where I'm highly active
 
 
