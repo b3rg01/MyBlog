@@ -203,4 +203,7 @@ rule WannaCry_Detection {
 
 ### Conclusion
 ---
+
 <div src="margin-top: 60px;"></div>
+
+To  conclude, this analysis was done following a certification that i went through recently and it is called Practical Malware Analysis & Triage. Even though, this is a old ransomware and many research has been peroformed onit. I still think that it was a great learning curve for me and I really enjoyed walking through the steps of the malware author and seeing how this ransomware worked.
