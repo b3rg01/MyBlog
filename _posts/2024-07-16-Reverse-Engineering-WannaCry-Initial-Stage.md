@@ -63,3 +63,13 @@ Hope you will enjoy this!!
 	- `13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94`
 - Suspicious commands:
 	- `icacls . /grant Everyone:F /T /C /Q` (Granting everyon acces to ACL)
+
+
+### Basic Dynamic Analysis
+---
+
+- When triggering the malware with internet nothing happens, as far as encrypting my files, but I see that some calls are made to a malicious url, probably to drop something else on my file system
+- When triggering the malware without internet connection, i can see that my file system get automatically encrypted
+- There's seems to be a lot of call to different DNS
+
+*Triggering the malware with fake internet simulation*
