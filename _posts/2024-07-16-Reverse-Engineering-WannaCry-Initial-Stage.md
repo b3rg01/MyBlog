@@ -165,7 +165,9 @@ Hope you will enjoy this!!
 ### Advanced Dynamic Analysis
 ---
 
->  Since I covered most of the initial program of the WannaCry program, in this section I just wanted to see how the newly created executable would be run
+<div src="padding-top: 60px;"></div>
+
+>  Since I covered most of the initial program of the WannaCry program, in this section I just wanted to see how the newly created executable would be run. I used the famous debugger x32dbg
 
  <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714215122.png" style="margin-top: 20px;margin-bottom: 20px;" > 
 
