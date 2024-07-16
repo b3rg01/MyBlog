@@ -81,3 +81,23 @@ Hope you will enjoy this!!
 
 *Triggering the malware without internet simulation*
 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709210004.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+- A window pops up, that asks for payment and all my files are now encrypted
+- There's new executable for decryption being created on my desktop
+	- `@WanaDecryptor@.exe`
+
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712150050.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+- a new executable is created named : `tasksche.exe`
+
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712150435.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+- we can also see that a folder is created by this newly executed process
+
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714222810.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714223416.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+- We also see that 2 new services can be seen
+	- `mssecsvc2.0`
+	- `dveqybpwqzws072`
