@@ -16,12 +16,14 @@ Here’s my own analysis of this particular specimen.
 In this blog post, I will analyze the initial stage of WannaCry ransomware sample. Please note that I'm new at this and I will try to provide a detail technical analysis of the initial stage to the best of my abilities. 
 Hope you will enjoy this!!
 
+<p src="margin-top: 60px;"></p>
 
 ###  General Details
 ---
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709173746.png" style="margin-top: 20px" > 
 
+<p src="margin-top: 60px;"></p>
 
 ### Basic Static Analysis
 ---
@@ -69,6 +71,8 @@ Hope you will enjoy this!!
 	- `icacls . /grant Everyone:F /T /C /Q` (Granting everyon acces to ACL)
 
 
+<p src="margin-top: 60px;"></p>
+
 ### Basic Dynamic Analysis
 ---
 
@@ -105,6 +109,20 @@ Hope you will enjoy this!!
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714222810.png" style="margin-top: 20px;margin-bottom: 20px;" > 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714223416.png" style="margin-top: 20px;margin-bottom: 20px;" > 
 
-- We also see that 2 new services can be seen
+- We also see that 2 new services have been created
 	- `mssecsvc2.0`
 	- `dveqybpwqzws072`
+
+<p src="margin-top: 60px;"></p>
+
+ ### Advanced Static Analysis
+---
+
+<p src="margin-top: 20px;"></p>
+
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714222810.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+- Here we can see that based on the response from the malicious domain, we will enter the real program
+	- Option 1 : We received a response from the domain and the program execute normally
+	- Option 2: We receive no response and the WannaCry program gets executed
+
