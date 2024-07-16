@@ -244,7 +244,7 @@ but you can still play around with it if you want to!
 # Conclusion
 ---
 
-  <img src="https://b3rg01.github.io/MyBlog/docs/assets/proof.png" style="border-radius: 10px 20px 30px 40px;" > 
+  <img src="https://b3rg01.github.io/MyBlog/docs/assets/proof.png" style="margin-top: 20px" > 
 
 So, here we are, we can clearly see that windows defender is not able to detect the malware. For now we only change the signature of our executable, I will try to perform an injection that will be undetectable by windows defender in another blog!
 
