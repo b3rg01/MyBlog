@@ -179,7 +179,28 @@ Hope you will enjoy this!!
 ---
 <div src="margin-top: 60px;"></div>
 
+```
+rule WannaCry_Detection {
+    
+    meta: 
+        last_updated = "2024-07-16"
+        author = "8erg"
+        description = "Yare detection rule for WannaCry Ransom"
 
+    strings:
+        $string1 = "mssecsvc.exe"
+        $string2 = "tasksche.exe"
+        $PE_magic_byte = "MZ"
+        $malicious_url = "http://www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com"
+
+    condition:
+        $PE_magic_byte at 0 and
+        ($string1 and $string2) or
+        $malicious_url
+}
+```
+
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716122337.png" style="margin-top: 20px;margin-bottom: 20px;" > 
 
 ### Conclusion
 ---
