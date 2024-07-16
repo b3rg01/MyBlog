@@ -120,9 +120,22 @@ Hope you will enjoy this!!
 
 <div src="margin-top: 20px;"></div>
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714222810.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712212059.png" style="margin-top: 20px;margin-bottom: 20px;" > 
 
 - Here we can see that based on the response from the malicious domain, we will enter the real program
 	- Option 1 : We received a response from the domain and the program execute normally
 	- Option 2: We receive no response and the WannaCry program gets executed
 
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712212327.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+ - based on the numbers arguments received we will enter in this function
+
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712213151.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+ - Here there's two function available, we will enter in the first one
+
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709220438.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+- Here we can see that the malware is creating and starting a new service called : `mssecsvc2.0`
+
+> ⚠️ The second function will be analyzed via ghidra, since it was difficult to debug it in cutter
