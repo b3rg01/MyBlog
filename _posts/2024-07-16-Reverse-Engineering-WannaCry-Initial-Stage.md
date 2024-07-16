@@ -28,8 +28,6 @@ Hope you will enjoy this!!
 
 <div src="margin-top: 60px;"></div>
 
-*The full list of images can be found in the Appendices.*
-
 >  For this part I used a command line tool named floss to get the strings from the ransomware executable.
 
 - By looking as some of the strings, we can see some interesting library related to encryptions such as:
@@ -177,6 +175,7 @@ Hope you will enjoy this!!
 
 ### Rules & Signatures
 ---
+
 <div src="margin-top: 60px;"></div>
 
 ```
