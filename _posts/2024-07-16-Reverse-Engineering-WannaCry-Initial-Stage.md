@@ -73,3 +73,11 @@ Hope you will enjoy this!!
 - There's seems to be a lot of call to different DNS
 
 *Triggering the malware with fake internet simulation*
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709182444.png" style="margin-top: 20px" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709182542.png" style="margin-top: 20px" >
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709182931.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+- It seems that the malware is making an http request to a malicious url
+
+*Triggering the malware without internet simulation*
+
