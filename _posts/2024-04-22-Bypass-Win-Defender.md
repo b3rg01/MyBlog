@@ -246,6 +246,8 @@ but you can still play around with it if you want to!
 
   ![Proof Image]({{ "/docs/assets/proof.png" | absolute_url }})
 
+  <img src="https://b3rg01.github.io/MyBlog/docs/assets/proof.png" > 
+
 So, here we are, we can clearly see that windows defender is not able to detect the malware. For now we only change the signature of our executable, I will try to perform an injection that will be undetectable by windows defender in another blog!
 
 # Credits
