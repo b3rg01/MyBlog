@@ -141,3 +141,30 @@ Hope you will enjoy this!!
 - Here we can see that the malware is creating and starting a new service called : `mssecsvc2.0`
 
 > ⚠️ The second function will be analyzed via ghidra, since it was difficult to debug it in cutter
+
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714204704.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+ - Here we can see that 4 function are loaded from `kernek32.dll`, will probably be used to create a malicious process that will run on the host machine
+
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714204902.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+ - Here we can see that a resource is loaded, let's wait and see what it will be used for
+
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714205402.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+- In the first 2 lines containing the `sprintf` statement we're formatting some strings
+- The line containing the `MoveFileExA`, to rename a file
+
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714170027.png" style="margin-top: 20px;margin-bottom: 20px;" > 
+
+- By comparing the same lines in cutter, we can clearly see that the malware is renaming the temporary file `qeriuwjhrf` to `tasksche.exe`
+- Then we're creating the file named `tasksche.exe`
+- Finally we can see that the program is writing the resource that was loaded earlier in the newly create file named `tasksche.exe`
+
+
+<div src="margin-bottom: 60px;"></div>
+
+### Advanced Dynamic Analysis
+---
+
+<div src="margin-top: 60px;"></div>
