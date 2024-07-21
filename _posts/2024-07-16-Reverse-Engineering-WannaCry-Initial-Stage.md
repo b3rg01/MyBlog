@@ -21,7 +21,7 @@ Hope you will enjoy this!!
 ###  General Details
 ---
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709173746.png" style="margin-top: 40px;margin-bottom:40px;" > 
+	<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709173746.png" style="margin-top: 40px;margin-bottom:40px;" > 
 
 ### Basic Static Analysis
 ---
