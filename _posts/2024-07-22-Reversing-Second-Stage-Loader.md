@@ -26,17 +26,17 @@ Hope you will enjoy this!!
 
 In this section I used a simple tool named `pe studio` to get a general understanding of the loader. After unpacking I also used a command line tool named `floss`
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223035.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223035.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
 - In this screenshot we can clearly see that `tudio` is not able to properly counts the imports and the libraries which indicates to me that this sample might be packed
 - also we can note that there is a high entropy. I will have to unpack it to be able to proceed my analysis
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223435.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223435.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
 - We can also see that the raw size is lower than the virtual size which might be another indicator that this sample is packed
 
   > ⚠️ Before proceeding further in our basic static analysis we will perform the unpacking steps with x32bdg, since we are focusing on the analysis, I will not put the process in this blog
 
 - Interesting strings, Before unpacking
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721140409.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721140409.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
 - After unpacking, I can see some interesting parts of some URLs
 	- `/photo.png?id=%0.2X%0.8X%0.8X%s`
 	- `boldidiotruss.xyz`
@@ -61,9 +61,9 @@ In this section I used a simple tool named `pe studio` to get a general understa
 ---
 
 <div src="margin-top: 60px;"></div>
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717061554.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717061554.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
 - By detonating the malware we notice that it tried to create a file named `photo.png`
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717062937.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717062937.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
 - We can also see that a `TLSv1.2` connection is made to `boldidiotruss.xyz`
 
 
@@ -80,13 +80,16 @@ In this section I used a simple tool named `pe studio` to get a general understa
 ### Advanced Dynamic Analysis
 ---
 
-<div src="padding-top: 60px;"></div>
+<div src="margin-top: 60px;"></div>
 
+<div src="margin-bottom: 60px;"></div>
 
 ### Rules & Signatures
 ---
 
 <div src="margin-top: 60px;"></div>
+
+<div src="margin-bottom: 60px;"></div>
 
 
 ### Conclusion
