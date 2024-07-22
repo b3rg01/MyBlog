@@ -25,7 +25,7 @@ Hope you will enjoy this!!
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709173746.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;"> 
 
->  For this part I used a command line tool named floss to get the strings from the ransomware executable.
+>  ℹ️ For this part I used a command line tool named floss to get the strings from the ransomware executable.
 
 - By looking as some of the strings, we can see some interesting library related to encryptions such as:
 	- `CryptAcquireContextA`
