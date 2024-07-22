@@ -19,10 +19,7 @@ Key areas of focus include the loader’s evasion techniques, persistence strate
 ### Basic Static Analysis
 ---
 
-<div style="margin-top: 20px; margin-bottom: 20px; text-align: justify;">
-	
-<div>
-	
+<div style="margin-top: 20px;"></div>
 In this section I used a simple tool named `pe studio` to get a general understanding of the loader. After unpacking I also used a command line tool named `floss`
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223035.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
@@ -53,8 +50,6 @@ In this section I used a simple tool named `pe studio` to get a general understa
 	- `WinHttpQueryHeaders`
 	- `WinHttpOpen`
 	- `WinHttpReceiveResponse`
-</div>
-</div>
 
 ### Basic Dynamic Analysis
 ---
