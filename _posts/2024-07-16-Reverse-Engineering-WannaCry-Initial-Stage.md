@@ -23,7 +23,7 @@ Hope you will enjoy this!!
 
 <div style="margin-top: 20px;"></div>
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709173746.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;"> 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709173746.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;"> 
 
 >  For this part I used a command line tool named floss to get the strings from the ransomware executable.
 
@@ -77,30 +77,30 @@ Hope you will enjoy this!!
 
 *Triggering the malware with fake internet simulation*
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709182444.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709182542.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709182931.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709182444.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709182542.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709182931.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 - It seems that the malware is making an http request to a malicious url
 
 *Triggering the malware without internet simulation*
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709210004.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709210004.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 - A window pops up, that asks for payment and all my files are now encrypted
 - There's new executable for decryption being created on my desktop
 	- `@WanaDecryptor@.exe`
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712150050.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712150050.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 - a new executable is created named : `tasksche.exe`
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712150435.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712150435.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 - we can also see that a folder is created by this newly executed process
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714222810.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714223416.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714222810.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714223416.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 - We also see that 2 new services have been created
 	- `mssecsvc2.0`
@@ -115,40 +115,40 @@ Hope you will enjoy this!!
 
 >  In this section, I will be using cutter and ghidra for the advanced static analysis
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712212059.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712212059.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 - Here we can see that based on the response from the malicious domain, we will enter the real program
 	- Option 1 : We received a response from the domain and the program execute normally
 	- Option 2: We receive no response and the WannaCry program gets executed
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712212327.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712212327.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
  - based on the numbers arguments received we will enter in this function
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712213151.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712213151.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
  - Here there's two function available, we will enter in the first one
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709220438.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709220438.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 - Here we can see that the malware is creating and starting a new service called : `mssecsvc2.0`
 
 > ⚠️ The second function will be analyzed via ghidra, since it was difficult to debug it in cutter
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714204704.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714204704.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
  - Here we can see that 4 function are loaded from `kernek32.dll`, will probably be used to create a malicious process that will run on the host machine
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714204902.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714204902.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
  - Here we can see that a resource is loaded, let's wait and see what it will be used for
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714205402.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714205402.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 - In the first 2 lines containing the `sprintf` statement we're formatting some strings
 - The line containing the `MoveFileExA`, to rename a file
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714170027.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714170027.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 - By comparing the same lines in cutter, we can clearly see that the malware is renaming the temporary file `qeriuwjhrf` to `tasksche.exe`
 - Then we're creating the file named `tasksche.exe`
@@ -164,7 +164,7 @@ Hope you will enjoy this!!
 
 >  Since I covered most of the initial program of the WannaCry program, in this section I just wanted to see how the newly created executable would be run. I used the famous debugger x32dbg
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714215122.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714215122.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 - Here we can see that the file `tasksche.exe` will be executed with the `/i`. This is the program that starts the encryption process.
 
@@ -196,7 +196,7 @@ rule WannaCry_Detection {
 }
 ```
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716122337.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716122337.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 <div style="margin-bottom: 40px;"></div>
 
