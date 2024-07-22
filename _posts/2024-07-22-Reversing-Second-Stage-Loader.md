@@ -31,7 +31,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223435.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 - We can also see that the raw size is lower than the virtual size which might be another indicator that this sample is packed
 
-> ⚠️ Before proceeding further in our basic static analysis we will perform the unpacking steps with x32bdg, since we are focusing on the analysis, I will not put the process in this blog
+> ⚠️ | Before proceeding further in our basic static analysis we will perform the unpacking steps with x32bdg, since we are focusing on the analysis, I will not put the process in this blog
 
 - Interesting strings, Before unpacking
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721140409.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;display: block;border: 2px solid transparent; border-radius: 8px;" > 
@@ -96,7 +96,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
 - There's some VM detection being performed by checking information about the CPU running the sample
 
 
-> ⚠️ Note that some functions have been renamed by me to facilitate the clarity of my analysis
+> ⚠️ | Note that some functions have been renamed by me to facilitate the clarity of my analysis
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717090929.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 	
