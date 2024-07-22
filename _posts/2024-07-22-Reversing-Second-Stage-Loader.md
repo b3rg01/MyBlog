@@ -19,7 +19,7 @@ Key areas of focus include the loader’s evasion techniques, persistence strate
 ### Basic Static Analysis
 ---
 
-<div src="margin-top: 20px; text-align: justify;">
+<div style="margin-top: 20px; margin-bottom: 20px; text-align: justify;">
 	
 
 In this section I used a simple tool named `pe studio` to get a general understanding of the loader. After unpacking I also used a command line tool named `floss`
@@ -57,16 +57,14 @@ In this section I used a simple tool named `pe studio` to get a general understa
 ### Basic Dynamic Analysis
 ---
 
-<div src="margin-top: 60px;"></div>
+<div style="margin-top: 20px; margin-bottom: 20px; text-align: justify;">
+	
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717061554.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 - By detonating the malware we notice that it tried to create a file named `photo.png`
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717062937.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 - We can also see that a `TLSv1.2` connection is made to `boldidiotruss.xyz`
 
-
-
-
-<div src="margin-bottom: 60px;"></div>
+</div>
 
 ### Advanced Static Analysis
 ---
