@@ -25,7 +25,7 @@ Hope you will enjoy this!!
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240709173746.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;"> 
 
->  ℹ️ For this part I used a command line tool named floss to get the strings from the ransomware executable.
+>  ℹ️ | For this part I used a command line tool named floss to get the strings from the ransomware executable.
 
 - By looking as some of the strings, we can see some interesting library related to encryptions such as:
 	- `CryptAcquireContextA`
@@ -113,7 +113,7 @@ Hope you will enjoy this!!
 
 <div style="margin-top: 20px;"></div>
 
-> ℹ️ In this section, I will be using cutter and ghidra for the advanced static analysis
+> ℹ️ | In this section, I will be using cutter and ghidra for the advanced static analysis
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240712212059.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
@@ -133,7 +133,7 @@ Hope you will enjoy this!!
 
 - Here we can see that the malware is creating and starting a new service called : `mssecsvc2.0`
 
-> ⚠️ The second function will be analyzed via ghidra, since it was difficult to debug it in cutter
+> ⚠️ | The second function will be analyzed via ghidra, since it was difficult to debug it in cutter
 
  <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714204704.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
@@ -162,7 +162,7 @@ Hope you will enjoy this!!
 
 <div style="margin-top: 20px;"></div>
 
-> ℹ️ Since I covered most of the initial program of the WannaCry program, in this section I just wanted to see how the newly created executable would be run. I used the famous debugger x32dbg
+> ℹ️ | Since I covered most of the initial program of the WannaCry program, in this section I just wanted to see how the newly created executable would be run. I used the famous debugger x32dbg
 
  <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240714215122.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
