@@ -1,5 +1,5 @@
 ---
-title: "Reverse Engineering Second Stage Loader - IcedID"
+title: "IcedID - Reverse Engineering Second Stage Loader"
 date: 2024-07-22
 ---
 
