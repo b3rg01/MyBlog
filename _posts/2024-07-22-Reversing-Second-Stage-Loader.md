@@ -110,7 +110,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
 - In these screenshots, we can clearly see the code the of the communication  with the C2 
 - Based on my analysis I deduct that a call his being made to verify that the command and control is active and running correctly, because of the parameters of the functions I can see that no data is actually being sent since it's only performing a get request
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721122821.png]" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721122821.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;" > 
 
 - Now, I thought to myself why would they be communicating via an URL that looks like you're fetching an image? Because, in reality you're really just communicating, sending and receiving information stealthily. Think about it, if you look in Wireshark and see some request made to this URL you would only think that a picture his being fetched, but in reality, you're data is probably being exfiltrated. I might be wrong in my analysis but that is what I get from it
 
@@ -125,8 +125,11 @@ In this section I used a simple tool named `pe studio` to get a general understa
 	6. we write in the data that decrypted in that file
 	7. we setting up the shellcode in memory and then we execute it
 
+<div src="top: 20px;">
+
   > ℹ️ In my basic dynamic analysis we don't see the call made to the url in question, that may be because the malware is able to detect that I'm using a vm, so it does not pursue the communication, we will confirm it later when we will be doing the Advanced Dynamic Analysis with our favorite debugger x32dbg.
-  
+</div>
+
 <div src="margin-bottom: 60px;"></div>
 
 ### Advanced Dynamic Analysis
@@ -134,12 +137,40 @@ In this section I used a simple tool named `pe studio` to get a general understa
 
 <div src="margin-top: 60px;"></div>
 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721131650.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;" >
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721131953.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;" >
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240722105526.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;" >
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240722110943.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;" >
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240722111231.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;" >
+
 <div src="margin-bottom: 60px;"></div>
 
 ### Rules & Signatures
 ---
 
 <div src="margin-top: 60px;"></div>
+
+```
+rule IcedId_Ldr_Detection {
+    
+    meta: 
+        last_updated = "2024-07-21"
+        author = "8erg"
+        description = "Yara detection rule for IcedId Loader"
+
+    strings:
+        $string1 = "Now Wardoor"
+        $string2 = "Now Wardoor.exe"
+        $string3 = "c:\Sizeanger\CreatePick\mixpractice\Sciencescience\KeyContain\farterm\Tiresubtract\CenterSkinMass.pdb"
+        $PE_byte = "MZ"
+        $magical_string = "1023442870282056"
+	    
+
+    condition:
+        $PE_byte at 0 and
+        ($string1 or $string2 or $magical_string)
+}
+```
 
 <div src="margin-bottom: 60px;"></div>
 
