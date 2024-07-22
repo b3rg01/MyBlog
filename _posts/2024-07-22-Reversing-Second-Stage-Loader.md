@@ -7,7 +7,7 @@ date: 2024-07-22
 ### Description
 ---
 
-<div src="margin-top: 60px; margin-bottom: 60px;">
+<div style="margin-top: 60px; margin-bottom: 60px;text-align: justify;">
 	
 
 In the ever-evolving landscape of cyber threats, the IcedID loader stands out as a formidable banking Trojan with sophisticated capabilities. Originally known for its role as a banking malware, IcedID has grown to serve as a versatile loader for deploying additional malicious payloads. This analysis delves into the intricate mechanisms of IcedID, from its initial delivery through phishing or exploit kits, to its operational intricacies and data exfiltration methods.
