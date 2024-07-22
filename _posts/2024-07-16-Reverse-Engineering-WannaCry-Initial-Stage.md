@@ -199,7 +199,7 @@ rule WannaCry_Detection {
 
 </div>
 
- <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716122337.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+ <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716122337.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
 <div style="margin-bottom: 40px;"></div>
 
