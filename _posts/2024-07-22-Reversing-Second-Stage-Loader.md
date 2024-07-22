@@ -33,9 +33,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223435.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 - We can also see that the raw size is lower than the virtual size which might be another indicator that this sample is packed
 
-<div style="margin-top: 20px; margin-bottom: 20px;">
-  > ⚠️ Before proceeding further in our basic static analysis we will perform the unpacking steps with x32bdg, since we are focusing on the analysis, I will not put the process in this blog
-</div>
+> ⚠️ Before proceeding further in our basic static analysis we will perform the unpacking steps with x32bdg, since we are focusing on the analysis, I will not put the process in this blog
 
 - Interesting strings, Before unpacking
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721140409.png" style="margin-left: 20px;box-shadow: 10px;display: block;border: 2px solid transparent; border-radius: 8px;" > 
@@ -127,10 +125,8 @@ In this section I used a simple tool named `pe studio` to get a general understa
 	6. we write in the data that decrypted in that file
 	7. we setting up the shellcode in memory and then we execute it
 
-<div src="top: 20px;">
 
-  > ℹ️ In my basic dynamic analysis we don't see the call made to the url in question, that may be because the malware is able to detect that I'm using a vm, so it does not pursue the communication, we will confirm it later when we will be doing the Advanced Dynamic Analysis with our favorite debugger x32dbg.
-</div>
+> ℹ️ In my basic dynamic analysis we don't see the call made to the url in question, that may be because the malware is able to detect that I'm using a vm, so it does not pursue the communication, we will confirm it later when we will be doing the Advanced Dynamic Analysis with our favorite debugger x32dbg.
 
 <div src="margin-bottom: 60px;"></div>
 
