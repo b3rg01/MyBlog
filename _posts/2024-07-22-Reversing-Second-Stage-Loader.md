@@ -7,7 +7,7 @@ date: 2024-07-22
 ### Description
 ---
 
-<div style="margin-top: 20px; margin-bottom: 20px;text-align: justify;">
+<div style="margin-top: 20px; margin-bottom: 40px;text-align: justify;">
 	
 
 In the ever-evolving landscape of cyber threats, the IcedID loader stands out as a formidable banking Trojan with sophisticated capabilities. Originally known for its role as a banking malware, IcedID has grown to serve as a versatile loader for deploying additional malicious payloads. This analysis delves into the intricate mechanisms of IcedID, from its initial delivery through phishing or exploit kits, to its operational intricacies and data exfiltration methods.
@@ -20,9 +20,11 @@ Key areas of focus include the loader’s evasion techniques, persistence strate
 ---
 
 <div style="margin-top: 20px;"></div>
+
 In this section I used a simple tool named `pe studio` to get a general understanding of the loader. After unpacking I also used a command line tool named `floss`
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223035.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223035.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
+
 - In this screenshot we can clearly see that `pe studio` is not able to properly counts the imports and the libraries which indicates to me that this sample might be packed
 - also we can note that there is a high entropy. I will have to unpack it to be able to proceed my analysis
 
@@ -50,23 +52,29 @@ In this section I used a simple tool named `pe studio` to get a general understa
 	- `WinHttpQueryHeaders`
 	- `WinHttpOpen`
 	- `WinHttpReceiveResponse`
+   
+<div style="margin-bottom: 40px;"></div>
 
 ### Basic Dynamic Analysis
 ---
 
-<div style="margin-top: 20px; margin-bottom: 20px; text-align: justify;">
+<div style="margin-top: 20px;"></div>
 	
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717061554.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+
 - By detonating the malware we notice that it tried to create a file named `photo.png`
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717062937.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
+
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717062937.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
+
 - We can also see that a `TLSv1.2` connection is made to `boldidiotruss.xyz`
 
-</div>
+<div style="margin-bottom: 20px;"></div>
+
 
 ### Advanced Static Analysis
 ---
 
-<div src="margin-top: 60px;"></div>
+<div style="margin-top: 20px;"></div>
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717081349.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
@@ -88,7 +96,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
 - There's some VM detection being performed by checking information about the CPU running the sample
 
 
-  > ⚠️ Note that some functions have been renamed by me to facilitate the clarity of my analysis
+> ⚠️ Note that some functions have been renamed by me to facilitate the clarity of my analysis
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240717090929.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 	
@@ -120,12 +128,12 @@ In this section I used a simple tool named `pe studio` to get a general understa
 
 > ℹ️ In my basic dynamic analysis we don't see the call made to the url in question, that may be because the malware is able to detect that I'm using a vm, so it does not pursue the communication, we will confirm it later when we will be doing the Advanced Dynamic Analysis with our favorite debugger x32dbg.
 
-<div src="margin-bottom: 60px;"></div>
+<div style="margin-bottom: 20px;"></div>
 
 ### Advanced Dynamic Analysis
 ---
 
-<div src="margin-top: 60px;"></div>
+<div style="margin-bottom: 20px;"></div>
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721131650.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721131953.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
@@ -133,12 +141,12 @@ In this section I used a simple tool named `pe studio` to get a general understa
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240722110943.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240722111231.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
 
-<div src="margin-bottom: 60px;"></div>
+<div style="margin-bottom: 20px;"></div>
 
 ### Rules & Signatures
 ---
 
-<div src="margin-top: 60px;"></div>
+<div style="margin-top: 20px;"></div>
 
 ```
 rule IcedId_Ldr_Detection {
@@ -162,12 +170,12 @@ rule IcedId_Ldr_Detection {
 }
 ```
 
-<div src="margin-bottom: 60px;"></div>
+<div style="margin-bottom: 20px;"></div>
 
 
 ### Conclusion
 ---
 
-<div src="margin-top: 60px;"></div>
+<div style="margin-top: 20px;"></div>
 
 
