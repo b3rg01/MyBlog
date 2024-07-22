@@ -3,8 +3,8 @@ title: Cybersecurity Research blog
 ---
 
 
-> ℹ️ | My socials 
+> ℹ️ |  
 > You can follow me on [twitter](https://twitter.com/8erg_) where I'm highly active
-> You can subscribe to my [newsletter](https://malware-chronicles.beehiiv.com/subscribe)
+> and subscribe to my [newsletter](https://malware-chronicles.beehiiv.com/subscribe)
 
 
