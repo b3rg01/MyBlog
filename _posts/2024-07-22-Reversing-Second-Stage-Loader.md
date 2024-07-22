@@ -21,11 +21,12 @@ Key areas of focus include the loader’s evasion techniques, persistence strate
 
 <div style="margin-top: 20px; margin-bottom: 20px; text-align: justify;">
 	
-
+<div>
+	
 In this section I used a simple tool named `pe studio` to get a general understanding of the loader. After unpacking I also used a command line tool named `floss`
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223035.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
-- In this screenshot we can clearly see that `tudio` is not able to properly counts the imports and the libraries which indicates to me that this sample might be packed
+- In this screenshot we can clearly see that `pe studio` is not able to properly counts the imports and the libraries which indicates to me that this sample might be packed
 - also we can note that there is a high entropy. I will have to unpack it to be able to proceed my analysis
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223435.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
@@ -52,6 +53,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
 	- `WinHttpQueryHeaders`
 	- `WinHttpOpen`
 	- `WinHttpReceiveResponse`
+</div>
 </div>
 
 ### Basic Dynamic Analysis
