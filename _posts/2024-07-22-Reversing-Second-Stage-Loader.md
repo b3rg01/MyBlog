@@ -1,5 +1,5 @@
 ---
-title: "Reverse Engineering Seecond Stage Loader - IcedID"
+title: "Reverse Engineering Second Stage Loader - IcedID"
 date: 2024-07-22
 ---
 
@@ -26,7 +26,7 @@ Hope you will enjoy this!!
 
 In this section I used a simple tool named `pe studio` to get a general understanding of the loader. After unpacking I also used a command line tool named `floss`
 
-<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223035.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
+<img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223035.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 2px;" > 
 - In this screenshot we can clearly see that `tudio` is not able to properly counts the imports and the libraries which indicates to me that this sample might be packed
 - also we can note that there is a high entropy. I will have to unpack it to be able to proceed my analysis
 
