@@ -173,7 +173,8 @@ Hope you will enjoy this!!
 ### Rules & Signatures
 ---
 
-<div style="margin-top: 20px;"></div>
+<div style="margin: 20px;">
+	
 
 ```
 rule WannaCry_Detection {
@@ -195,6 +196,8 @@ rule WannaCry_Detection {
         $malicious_url
 }
 ```
+
+</div>
 
  <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716122337.png" style="margin: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
