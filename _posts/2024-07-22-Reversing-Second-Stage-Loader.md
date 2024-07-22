@@ -9,12 +9,9 @@ date: 2024-07-22
 
 <div src="margin-top: 60px;"></div>
 
-In the early summer of 2017, WannaCry was unleashed on the world. Widely considered to be one of the most devastating malware infections to date, WannaCry left a trail of destruction in its wake. 
-WannaCry is a classic ransomware sample; more specifically, it is a ransomware crypto worm, which means that it can encrypt individual hosts and had the capability to propagate through a network on its own.
-Here’s my own analysis of this particular specimen.
+In the ever-evolving landscape of cyber threats, the IcedID loader stands out as a formidable banking Trojan with sophisticated capabilities. Originally known for its role as a banking malware, IcedID has grown to serve as a versatile loader for deploying additional malicious payloads. This analysis delves into the intricate mechanisms of IcedID, from its initial delivery through phishing or exploit kits, to its operational intricacies and data exfiltration methods.
 
-In this blog post, I will analyze the initial stage of WannaCry ransomware sample. Please note that I'm new at this and I will try to provide a detail technical analysis of the initial stage to the best of my abilities. 
-Hope you will enjoy this!!
+Key areas of focus include the loader’s evasion techniques, persistence strategies, and communication with command-and-control servers. By dissecting IcedID's functionality and evolution, this analysis aims to shed light on its impact on targeted systems and provide insights into effective detection and mitigation strategies.
 
 <div src="margin-bottom: 60px;"></div>
 
