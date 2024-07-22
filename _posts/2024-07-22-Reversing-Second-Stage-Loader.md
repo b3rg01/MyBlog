@@ -146,7 +146,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
 ### Rules & Signatures
 ---
 
-<div style="margin: 20px;">
+<div style="margin-top: 20px;"></div>
 
 ```
 rule IcedId_Ldr_Detection {
@@ -170,7 +170,7 @@ rule IcedId_Ldr_Detection {
 }
 ```
 
-</div>
+<div style="margin-bottom: 40px;"></div>
 
 ### Conclusion
 ---
