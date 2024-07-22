@@ -33,7 +33,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
  <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716223435.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
 - We can also see that the raw size is lower than the virtual size which might be another indicator that this sample is packed
 
-  > [!warning] Before proceeding further in our basic static analysis we will perform the unpacking steps with x32bdg, since we are focusing on the analysis, I will not put the process in this blog
+  >  Before proceeding further in our basic static analysis we will perform the unpacking steps with x32bdg, since we are focusing on the analysis, I will not put the process in this blog
 
 - Interesting strings, Before unpacking
  <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721140409.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;" > 
