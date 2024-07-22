@@ -68,7 +68,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
 
 - We can also see that a `TLSv1.2` connection is made to `boldidiotruss.xyz`
 
-<div style="margin-bottom: 20px;"></div>
+<div style="margin-bottom: 40px;"></div>
 
 
 ### Advanced Static Analysis
@@ -128,12 +128,12 @@ In this section I used a simple tool named `pe studio` to get a general understa
 
 > ℹ️ In my basic dynamic analysis we don't see the call made to the url in question, that may be because the malware is able to detect that I'm using a vm, so it does not pursue the communication, we will confirm it later when we will be doing the Advanced Dynamic Analysis with our favorite debugger x32dbg.
 
-<div style="margin-bottom: 20px;"></div>
+<div style="margin-bottom: 40px;"></div>
 
 ### Advanced Dynamic Analysis
 ---
 
-<div style="margin-bottom: 20px;"></div>
+<div style="margin-top: 20px;"></div>
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721131650.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721131953.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
@@ -141,7 +141,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240722110943.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240722111231.png" style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
 
-<div style="margin-bottom: 20px;"></div>
+<div style="margin-bottom: 40px;"></div>
 
 ### Rules & Signatures
 ---
@@ -170,7 +170,7 @@ rule IcedId_Ldr_Detection {
 }
 ```
 
-<div style="margin-bottom: 20px;"></div>
+<div style="margin-bottom: 40px;"></div>
 
 
 ### Conclusion
