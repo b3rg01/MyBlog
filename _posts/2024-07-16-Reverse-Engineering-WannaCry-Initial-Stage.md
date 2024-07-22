@@ -69,7 +69,7 @@ Hope you will enjoy this!!
 ### Basic Dynamic Analysis
 ---
 
-<div style="margin-top: 60px;"></div>
+<div style="margin-top: 20px;"></div>
 
 - When triggering the malware with internet nothing happens, as far as encrypting my files, but I see that some calls are made to a malicious url, probably to drop something else on my file system
 - When triggering the malware without internet connection, i can see that my file system get automatically encrypted
@@ -174,8 +174,8 @@ Hope you will enjoy this!!
 ---
 
 <div style="margin: 20px;">
+</div>
 	
-
 ```
 rule WannaCry_Detection {
     
@@ -196,8 +196,6 @@ rule WannaCry_Detection {
         $malicious_url
 }
 ```
-
-</div>
 
  <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240716122337.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" > 
 
