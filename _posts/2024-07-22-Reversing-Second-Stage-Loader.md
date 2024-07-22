@@ -7,7 +7,7 @@ date: 2024-07-22
 ### Description
 ---
 
-<div style="margin-top: 60px; margin-bottom: 60px;text-align: justify;">
+<div style="margin-top: 20px; margin-bottom: 20px;text-align: justify;">
 	
 
 In the ever-evolving landscape of cyber threats, the IcedID loader stands out as a formidable banking Trojan with sophisticated capabilities. Originally known for its role as a banking malware, IcedID has grown to serve as a versatile loader for deploying additional malicious payloads. This analysis delves into the intricate mechanisms of IcedID, from its initial delivery through phishing or exploit kits, to its operational intricacies and data exfiltration methods.
@@ -19,7 +19,8 @@ Key areas of focus include the loader’s evasion techniques, persistence strate
 ### Basic Static Analysis
 ---
 
-<div src="margin-top: 60px;"></div>
+<div src="margin-top: 20px; text-align: justify;">
+	
 
 In this section I used a simple tool named `pe studio` to get a general understanding of the loader. After unpacking I also used a command line tool named `floss`
 
@@ -51,8 +52,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
 	- `WinHttpQueryHeaders`
 	- `WinHttpOpen`
 	- `WinHttpReceiveResponse`
-
-<div src="margin-bottom: 60px;"></div>
+</div>
 
 ### Basic Dynamic Analysis
 ---
