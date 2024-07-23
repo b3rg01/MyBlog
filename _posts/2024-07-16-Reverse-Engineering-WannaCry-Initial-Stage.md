@@ -1,5 +1,5 @@
 ---
-title: "Reverse Engineering WannaCry Initial Stage"
+title: "WannaCry - Analyzing Initial Stage"
 date: 2024-07-16
 ---
 
