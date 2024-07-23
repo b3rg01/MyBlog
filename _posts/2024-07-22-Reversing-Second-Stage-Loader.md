@@ -140,7 +140,7 @@ In this section I used a simple tool named `pe studio` to get a general understa
 
 <img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240721131953.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
 
-- We can also see the URL being formed, you can see that there is type of string that is appended to it. It's probably some data about the host being sent to the `Command & Control Server` , You can see some more details about the the construction of this string in the picture below
+- We can also see the URL being formed, you can see that there is type of string that is appended to it. It's probably some data about the host being sent to the `Command & Control` Server , You can see some more details about the the construction of this string in the picture below
 
 >
 ><img src="https://b3rg01.github.io/MyBlog/docs/assets/Pasted image 20240723093759.png" style="margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto;box-shadow: 10px;border: 2px solid transparent; border-radius: 8px;" >
