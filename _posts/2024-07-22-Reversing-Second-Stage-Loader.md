@@ -173,17 +173,12 @@ rule IcedId_Ldr_Detection {
         description = "Yara detection rule for IcedId Loader"
 
     strings:
-        $string1 = "Now Wardoor"
-        $string2 = "Now Wardoor.exe"
-        $string3 = "c:\Sizeanger\CreatePick\mixpractice\Sciencescience\KeyContain\farterm\Tiresubtract\CenterSkinMass.pdb"
-        $PE_byte = "MZ"
-        $magical_string = "1023442870282056"
-	    
+        $magical_path = "c:\\Sizeanger\\CreatePick\\mixpractice\\Sciencescience\\KeyContain\\farterm\\Tiresubtract\\CenterSkinMass.pdb"
 
     condition:
-        $PE_byte at 0 and
-        ($string1 or $string2 or $magical_string)
+        $magical_path
 }
+
 ```
 
 <div style="margin-bottom: 40px;"></div>
