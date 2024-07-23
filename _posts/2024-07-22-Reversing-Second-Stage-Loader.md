@@ -193,9 +193,9 @@ rule IcedId_Ldr_Detection {
 
 <div style="margin-top: 20px; margin-bottom: 40px;text-align: justify;">
 	
-In the ever-evolving landscape of cyber threats, the IcedID loader stands out as a formidable banking Trojan with sophisticated capabilities. Originally known for its role as a banking malware, IcedID has grown to serve as a versatile loader for deploying additional malicious payloads. This analysis delves into the intricate mechanisms of IcedID, from its initial delivery through phishing or exploit kits, to its operational intricacies and data exfiltration methods.
-
-Key areas of focus include the loader’s evasion techniques, persistence strategies, and communication with command-and-control servers. By dissecting IcedID's functionality and evolution, this analysis aims to shed light on its impact on targeted systems and provide insights into effective detection and mitigation strategies.
+Well, this is it for this analysis. I really enjoyed this one! I'm really starting to get the hang of it. 
+It's interesting to see how some people develop their malware, you can see that there's a lot of thought that are put into it. 
+I'm really learning a lot. Well, I'll stop babbling now. See you on the next one!
 
 </div>
 
